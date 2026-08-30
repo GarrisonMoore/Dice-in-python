@@ -3,8 +3,6 @@
 Simpuhl Dice roller
 """
 
-
-
 # *** USING OFFICIAL ASCII COLORS CODE - https://pypi.org/project/ascii-colors/
 from ascii_colors import ASCIIColors, rich
 from random import randint
@@ -55,13 +53,12 @@ while reset:
             print("Please enter a number")
             continue
 
-
     # type cast user input to an integer
     rolls = int(user_input_2)
 
     # confirm user selection
-    print(f"OK, we will roll {rolls} number of your dice.\n")
-
+    print(f"OK, we will roll {rolls} of your dice.\n")
+    time.sleep(2)
 
     # GAME LOGIC - A for loop that runs for user specified # of rounds with user specified # of sides on each dice.
     # Adds scores and prints total score at the end
